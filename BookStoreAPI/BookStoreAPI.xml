@@ -4,6 +4,41 @@
         <name>BookStoreAPI</name>
     </assembly>
     <members>
+        <member name="M:BookStoreAPI.Controllers.AuthorsController.GetAuthors">
+            <summary>
+            GET All Authors
+            </summary>
+            <returns>List Of Authors</returns>
+        </member>
+        <member name="M:BookStoreAPI.Controllers.AuthorsController.GetAuthor(System.Int32)">
+            <summary>
+            GET an Author by id
+            </summary>
+            <param name="Id"></param>
+            <returns>An Author</returns>
+        </member>
+        <member name="M:BookStoreAPI.Controllers.AuthorsController.Create(BookStoreAPI.DTOs.CreateAuthorDTO)">
+            <summary>
+            CREATE an Author
+            </summary>
+            <param name="authorDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStoreAPI.Controllers.AuthorsController.Update(System.Int32,BookStoreAPI.DTOs.EditAuthorDTO)">
+            <summary>
+            UPDATE an Author
+            </summary>
+            <param name="Id"></param>
+            <param name="authorEditDTO"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BookStoreAPI.Controllers.AuthorsController.Delete(System.Int32)">
+            <summary>
+            DELETE Author by Id
+            </summary>
+            <param name="Id"></param>
+            <returns></returns>
+        </member>
         <member name="T:BookStoreAPI.Controllers.HomeController">
             <summary>
             test controller API
